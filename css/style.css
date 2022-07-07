@@ -1,0 +1,137 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+body {
+    background-color: rgb(230, 227, 227);
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+
+/* GAME  */
+
+#box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
+.box {
+    height: 100px;
+    border: 3px solid #000;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+
+#block1, #block2, #block3 {
+    border-top: none;
+}
+
+#block1, #block4, #block7 {
+    border-left: none;
+}
+
+#block7, #block8, #block9 {
+    border-bottom: none;
+}
+
+#block3, #block6, #block9 {
+    border-right: none;
+}
+
+/* SYMBOLS  */
+
+.x {
+    font-size: 5rem;
+    color: red;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.o {
+    font-size: 5rem;
+    color: green;
+    display: inline-block;
+    line-height: 100px;
+}
+
+/* SCOREBOARD  */
+
+h2 {
+    position: relative;
+}
+
+#scoreboard-container {
+    font-weight: bold;
+    margin-top: 3rem;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+#x-scoreboard {
+    color: red;
+}
+
+#o-scoreboard {
+    color: green;
+}
+
+.score-box {
+    margin: 1rem;
+}
+
+
+/* MESSAGE  */
+
+#message p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 35vh;
+    width: 40vw;
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.905);
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+/* HELPERS  */
+
+.hide {
+    display: none !important;
+}
