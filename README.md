@@ -1,2 +1,2 @@
-# Four in a Row
+# Tic Tac Toe
  
